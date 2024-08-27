@@ -2,7 +2,8 @@
 This is an encoder/decoder for the Basic 6 challenge on Hack Ths Site. Find it [here](https://www.hackthissite.org/missions/basic/)
 
 ## Usage
-Simply run either of the following commands
+Simply run either of the following commands.
+
 **Encoding:**
 ```
 python3 program.py -enc My1nPut
