@@ -1,7 +1,9 @@
 # HTS-Basic-6-Encoder
-This is an encoder/decoder for the Basic 6 challenge on Hack Ths Site.
+This is an encoder/decoder for the Basic 6 challenge on Hack Ths Site. Find it [here](https://www.hackthissite.org/missions/basic/)
 
 ## Analogy (RE) of Original Encoder
+**Alphabetic characters**
+```
 love = lpxh # Still length 4
 
 abc = ace
@@ -13,7 +15,10 @@ fghij = fhjln
 	Rule: For each letter in string:
 			cypher = cypher + character of ( decimal of letter + index of letter )
 */
+```
 
+**Numeric characters**
+```
 123 = 135
 123456 = 13579; # ; = 6 + 4 = 11
 09 = 0: # : = 9 + 1 = 10
@@ -32,3 +37,5 @@ fghij = fhjln
 */
 
 /* MAXIMUM ALLOWED LENTH IS 14 */
+```
+After a couple of test, we find that the maximum allowed length of input is 14 characters.
