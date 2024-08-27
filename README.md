@@ -1,4 +1,4 @@
-# HTS-Basic-6-Encoder
+# HTS-Basic-6-EncoderDecoder
 This is an encoder/decoder for the Basic 6 challenge on Hack Ths Site. Find it [here](https://www.hackthissite.org/missions/basic/)
 
 ## Usage
