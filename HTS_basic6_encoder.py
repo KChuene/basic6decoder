@@ -30,7 +30,7 @@ def enc_numeric(char: str, index: int):
 def dec_numeric(char: str, index: int):
     if not char.isnumeric():
         return char
-    
+    #6386;k8k
     numeric = int(char) - index
     if numeric < 0:
         return char
@@ -55,25 +55,29 @@ def dec_alpha(char: str, index: int):
 
 def encode(string: str) -> str:
     result = []
-    for char in string:
+    for index in range(0, len(string)):
+        char = string[index]
         if char.isnumeric():
-            result.append( enc_numeric(char, string.index(char)) )
+            result.append( enc_numeric(char, index) )
         else:
-            result.append( enc_alpha(char, string.index(char)) )
+            result.append( enc_alpha(char, index) )
 
     return ''.join(result)
 
 def decode(string: str) -> str:
     result = []
-    for char in string:
+    for index in range(0, len(string)):
+        char = string[index]
         if char.isnumeric():
-            result.append( dec_numeric(char, string.index(char)) )
+            result.append( dec_numeric(char, index) )
         else:
-            result.append( dec_alpha(char, string.index(char)) )
+            result.append( dec_alpha(char, index) )
 
-    return ''.join(result)    
+    return ''.join(result) 
 
 if __name__=="__main__":
+    sys.argv.append("-dec")
+    sys.argv.append("6386;k8k")
     if not (len(sys.argv) >= 3):
         bye("Insufficient arguments.", True)
 
