@@ -76,13 +76,11 @@ def decode(string: str) -> str:
     return ''.join(result) 
 
 if __name__=="__main__":
-    sys.argv.append("-dec")
-    sys.argv.append("6386;k8k")
     if not (len(sys.argv) >= 3):
         bye("Insufficient arguments.", True)
 
     elif len(sys.argv[2]) > 14:
-        bye("Input string is too long.")
+        bye("Input string is too long.", True)
 
     mode = sys.argv[1]
     if mode == "-enc":
@@ -90,4 +88,4 @@ if __name__=="__main__":
     elif mode == "-dec":
         print(decode(sys.argv[2]))
     else:
-        bye("Only modes -enc and -dec are applicable.")
+        bye("Only modes -enc and -dec are applicable.", True)
