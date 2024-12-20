@@ -1,14 +1,14 @@
 # HTS-Basic-6-EncoderDecoder
-This is an encoder/decoder for the Basic 6 challenge on Hack Ths Site. Find it [here](https://www.hackthissite.org/missions/basic/)
+This is an encoder/decoder script for the Basic 6 challenge on Hack This Site. Find it [here](https://www.hackthissite.org/missions/basic/).
 
 ## Usage
 Simply run either of the following commands.
 
-**Encoding:**
+**[Encoding:]**
 ```
 python3 program.py -enc My1nPut
 ```
-**Decoding:**
+**[Decoding:]**
 ```
 python3 program.py -dec Mz3qTzz
 ```
