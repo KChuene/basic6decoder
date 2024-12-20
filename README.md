@@ -4,11 +4,11 @@ This is an encoder/decoder script for the Basic 6 challenge on Hack This Site. F
 ## Usage
 Simply run either of the following commands.
 
-**[Encoding:]**
+**Encoding:**
 ```
 python3 program.py -enc My1nPut
 ```
-**[Decoding:]**
+**Decoding:**
 ```
 python3 program.py -dec Mz3qTzz
 ```
